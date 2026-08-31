@@ -100,7 +100,7 @@ class LoanApplication(models.Model):
         comodel_name="product.product", string="Motorcycle", required=True
     )
 
-    currency_id = fields.Monetary(
+    currency_id = fields.Many2one(
         comodel_name="res.currency", default=lambda self: self.env.company.currency_id, currency_field="currency_id"
     )
 
