@@ -13,7 +13,7 @@
         with demo data enabled. That is also where base.res_partner_1 comes
         from, so the two go together.
     -->
-    <data noupdate="1">
+    <data noupdate="0">
 
         <record id="loan_application_demo_1" model="loan.application">
             <!-- partner_id is required=True on the model, so every record
