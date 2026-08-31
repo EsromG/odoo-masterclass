@@ -42,7 +42,7 @@ class LoanApplication(models.Model):
         ('rejected', 'Rejected'),
     ], copy=False, default='draft')
 
-    active = fields.Boolean(deafult=True)
+    active = fields.Boolean(default=True)
 
     notes= fields.Html (string="Internal Notes", copy=False)
     
@@ -103,6 +103,8 @@ class LoanApplication(models.Model):
     currency_id = fields.Monetary(
         comodel_name="res.currency", default=lambda self: self.env.company.currency_id, currency_field="currency_id"
     )
+
+    loan_amount = fields.Monetary( currency_field="currency_id" )
 
     down_payment = fields.Monetary( currency_field="currency_id" )
 
