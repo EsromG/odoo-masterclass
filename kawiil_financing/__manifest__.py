@@ -17,20 +17,20 @@
 {
     # The app title in the Apps list. This is the text you search for when you
     # install the module.
-    "name": "TODO",
+    "name": "Loan manager",
     # One line saying what the module does, shown under the title.
-    "summary": "TODO",
+    "summary": "This is an app keeps track of your loans",
     # Where the app is filed in the Apps list. Odoo splits this on "/", so
     # "Parent/Child" files it under a Child group inside Parent.
-    "category": "TODO",
+    "category": "Finance",
     # Your full name.
-    "maintainer": "TODO",
+    "maintainer": "Fernando odoo 😉",
     # Where to find this module's source. Leave as is.
     "website": "https://github.com/odoo-trainings/development-masterclass",
     # This module's own version number. Leave as is.
     "version": "1.0.0",
     # Checked byte-for-byte by the linter. Leave as is.
-    "author": "ODOP Trainee",
+    "author": "Esrom",
     # The modules Odoo must install before this one. "base" is the framework
     # itself, so every module depends on it.
     # TODO (assignment 2.03): this module starts linking to products, so swap

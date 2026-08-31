@@ -13,8 +13,8 @@ Allow Odoo.sh to push code to the repository using a writable deploy key on the 
 
 ```bash
 # Configure Identity (Every time you have a new container): Ensure your commits are attributed to you.
-git config --global user.name "Your Name"
-git config --global user.email "youremail@example.com"
+git config --global user.name "Esrom"
+git config --global user.email "esromtesfabrhan@gmail.com"
 
 
 # Commit and push
