@@ -99,8 +99,9 @@
                                     <field name="down_payment" widget="monetary"/>
                                     <field name="loan_amount" widget="monetary"/>
                                     -->
-                                    <field name="loan_amount"/>
+                                    <field name="principal_amount" widget="monetary"/>
                                     <field name="down_payment"/>
+                                    <field name="loan_amount"/>
                                 </group>
                                 <group>
                                     <field name="loan_term"/>
