@@ -139,6 +139,7 @@
                         </page>
                     </notebook>
                 </sheet>
+                <chatter/>
                 <!-- TODO (3.06): the chatter goes here, between the sheet and the
                      end of the form: a single <chatter/> node. Outside the sheet on
                      purpose — the sheet is the record's own paper, the chatter is

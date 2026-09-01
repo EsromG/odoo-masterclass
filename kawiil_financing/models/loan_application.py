@@ -22,7 +22,7 @@ class LoanApplication(models.Model):
     # TODO (3.06): mix the chatter into this model by adding _inherit alongside the
     # two lines above — keep _name, do not replace it:
     #
-    #     _inherit = ["mail.thread", "mail.activity.mixin"]
+    _inherit = ["mail.thread", "mail.activity.mixin"]
     #
     # mail.thread brings the message history and followers; mail.activity.mixin
     # brings scheduled activities. Both are AbstractModels: they have no table of
@@ -82,6 +82,7 @@ class LoanApplication(models.Model):
         ],
         default="draft",
         copy=False,
+        tracking=True
     )
 
     active = fields.Boolean(default=True)
@@ -116,7 +117,7 @@ class LoanApplication(models.Model):
     # not something anyone can be asked to fill in, and a required column with
     # nothing writing to it only produces NOT NULL errors.
     principal_amount = fields.Monetary(
-        string="Principal Amount", required=True, currency_field="currency_id"
+        string="Principal Amount", required=True, currency_field="currency_id", tracking=True
     )
 
     # TODO (3.01): loan_amount stops being a figure anyone types in.

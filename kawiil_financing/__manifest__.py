@@ -12,7 +12,7 @@
     # adds is the Contacts app itself, and therefore somewhere to click to reach a
     # customer and see your smart button. Odoo installs everything named here before
     # your module, and refuses to install your module if one of them is missing.
-    "depends": ["product"],
+    "depends": ["product","contacts"],
     "license": "OPL-1",
     "data": [
         "security/kawiil_financing_groups.xml",
